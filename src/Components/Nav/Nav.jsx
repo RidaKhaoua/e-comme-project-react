@@ -27,12 +27,12 @@ function Navigation({ className }) {
         <li>
           <Link to="shopPage">Shop</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="aboutUs">About us</Link>
         </li>
         <li>
           <Link to="contactUs">Contanct us</Link>
-        </li>
+        </li> */}
       </ul>
       <div className="header__icons">
         <SearchOutlinedIcon className="header__icon" />
