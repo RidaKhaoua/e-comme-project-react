@@ -1,0 +1,177 @@
+.table-products {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    right: 4px;
+    bottom: 0;
+    width: 31%;
+    background-color: #f2f2f2;
+    color: white;
+    transform: translateX(1000px);
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+@media screen and (max-width:771px) {
+    .table-products {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:771px) and (max-width:991px) {
+    .table-products {
+        width: 70%;
+    }
+}
+
+.table-products.show {
+    transform: translateX(0px);
+}
+
+/* .table-products:hover {
+    overflow-y: scroll;
+} */
+
+.table-products .close {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    font-size: 22px;
+    color: #000;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.table-products>.table-products__title {
+    text-align: center;
+    color: #000;
+    padding: 10px 0;
+}
+
+.table-products__title span {
+    font-weight: 300;
+}
+
+.table-products__container {
+    height: 550px;
+    overflow: hidden;
+    padding: 0 22px;
+    overflow-y: scroll;
+
+}
+
+.table-products__container::-webkit-scrollbar {
+    width: 10px;
+    /* Adjust scrollbar width as needed */
+}
+
+.table-products__container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Track color */
+}
+
+.table-products__container::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Thumb color */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+.table-products__container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Thumb color on hover */
+}
+
+.table-products__container:hover {
+    overflow-y: scroll;
+
+}
+
+.table-products__content {
+    /* height: 650px; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 6px;
+    margin-top: 22px;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+.table-products__content.active {
+    opacity: 1;
+}
+
+
+
+.table-products img {
+    width: 45px;
+    object-fit: cover;
+
+}
+
+.table-products__info {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-products__title-qantity-wraper {}
+
+.table-products__content .table-products__title {
+    font-size: 13px;
+    color: #000;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.table-products__quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.table-products__quantity button {
+    background-color: var(--bg-color);
+    height: 20 px;
+    width: 20px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+}
+
+.table-products__quantity input {
+    width: 55px;
+    padding: 3px;
+    border-radius: 6px;
+    outline: none;
+}
+
+.table-products__price {
+    color: var(--secondary-color);
+    margin-top: 10px;
+}
+
+.table-products__btn-remove button svg {
+    color: #000;
+    cursor: pointer;
+}
+
+.table-products__checkout {
+    background-color: #000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+}
+
+.table-products__checkout button {
+    color: #fff;
+}

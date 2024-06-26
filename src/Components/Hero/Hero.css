@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@400;700&display=swap');
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    /* padding: 40px 0; */
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 158, 0.38) 100%);
+    overflow: hidden;
+}
+
+@media (max-width:1420px) {
+    .hero {
+        justify-content: center;
+        
+    }
+}
+
+.hero__left {
+    /* border: 1px solid red; */
+    flex: 1;
+    padding-left: 120px;
+}
+
+@media (max-width:1420px) {
+    .hero__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        text-align: center;
+    }
+}
+
+.hero__small-title {
+    font-size: 2vw;
+}
+
+.hero__small-title,
+.hero__medium-title {
+    font-family: 'Mada', sans-serif;
+    color: #000;
+    font-style: normal;
+}
+
+.hero__medium-title {
+    font-size: 2vw;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+.hero__big-title {
+    font-size: 9vw;
+    font-family: 'Aclonica', sans-serif;
+    margin: 30px 0;
+}
+
+.hero__big-title span {
+    position: relative;
+}
+
+.hero__big-title span::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+}
+
+.hero__right {
+    position: relative;
+    z-index: 1;
+    width: 408.131px;
+    height: 479px;
+}
+
+@media (max-width:1420px) {
+    .hero__right,
+    .hero__right::before{
+        display: none;
+    }
+}
+
+.hero__right::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: -66px;
+    z-index: -1;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    background-color: #ffffff36;
+}
+
+
+.hero__right img {
+    position: relative;
+    width: 100%;
+    top: -22px;
+
+    object-fit: cover;
+}
+
+.hero__button-explore button {
+    background: linear-gradient(180deg, rgba(255, 81, 81, 0.50) 0%, #FF5E3A 100%);
+    color: #fff;
+    width: 180px;
+    padding: 18px 0;
+    outline: none;
+    border-radius: var(--raduis-10);
+    font-weight: 700;
+    cursor: pointer;
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+.hero__button-explore button:hover {
+    box-shadow: 0px 0px 6px 4px rgba(255, 0, 0, 0.493);
+}

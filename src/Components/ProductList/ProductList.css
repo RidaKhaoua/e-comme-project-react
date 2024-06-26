@@ -1,0 +1,16 @@
+.productList__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));
+    justify-items: center;
+}
+
+@media screen and (max-width:400px) {
+    .productList__container {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+}
+
+.productList h1 {
+    text-align: center;
+    font-size: 22px;
+}

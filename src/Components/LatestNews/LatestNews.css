@@ -1,0 +1,16 @@
+.latestNews {
+    padding: var(--padding);
+}
+
+.latestNews__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    justify-items: center;
+    gap: 14px;
+}
+
+@media screen and (max-width:320px) {
+    .latestNews__cards {
+        justify-items: flex-start;
+    }
+}

@@ -1,0 +1,44 @@
+.is-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+}
+
+.is-loading > div {
+    width: 10px;
+    height: 10px;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    animation: showandhide 0.5s  ease-in-out  alternate  infinite;  
+    opacity: 0.3;
+}
+
+.is-loading .first {
+    animation-delay: 3s;
+}
+
+.is-loading .second {
+    animation-delay: 3s;
+}
+
+.is-loading .threed {
+    animation-delay: 6s;
+}
+
+@keyframes showandhide {
+    0% {
+        opacity: 0.3;
+        transform: scale(0.9);
+    }
+    50% {
+        
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 0.3;
+        transform: scale(0.9);
+    }
+}

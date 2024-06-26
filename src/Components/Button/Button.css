@@ -1,0 +1,30 @@
+.button-filter {
+    width: 100px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    border-radius: 6px;
+    box-shadow: 0 0 10px #ccc;
+    cursor: pointer;
+}
+
+.button-filter.active {
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 81, 81, 0.50) 0%, #FF5E3A 100%);
+    color: white;
+}
+
+.button-filter.active::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 81, 81, 0.50) 0%, #FF5E3A 100%);
+    filter: blur(25px);
+    transition: filter 0.3s ease-in-out;
+}

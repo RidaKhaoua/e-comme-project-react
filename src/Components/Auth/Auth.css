@@ -1,0 +1,138 @@
+.auth h2 {
+    margin-bottom: 30px;
+    font-size: 3rem;
+    color: var(--color);
+}
+
+.auth-left__form {
+    min-height: 330px; 
+    overflow-x:hidden; 
+    position:relative;
+    display: flex;
+    width: 100%;
+}
+
+.auth .login,
+.auth .register {
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    inset: 0;
+}
+
+/* .auth .register {
+    position: absolute;
+    top: 0;
+    width: 100%;
+} */
+
+.auth .register.show {
+    transform: translateX(0);
+}
+
+.auth .register.hide {
+    transform: translateX(1000%);
+    /* right: 1000px; */
+}
+
+.auth .login.show {
+    transform: translateX(0);
+}
+
+.auth .login.hide {
+    transform: translateX(-1000%);
+}
+
+
+
+
+.auth form>div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    gap: 10px;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.auth form input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+
+
+.auth .visibility-psw {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.login__left-forget-pswd {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+}
+
+.login__left-forget-pswd a {
+    color: var(--secondary-color);
+    font-size: 13px;
+}
+
+.auth .sign-in,
+.auth .sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--bg-color);
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    margin: auto;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.auth .sign-in svg,
+.auth .sign-up svg {
+    font-size: 15px;
+}
+
+.auth .sign-in:hover,
+.auth .sign-up:hover {
+    opacity: 0.9;
+}
+
+.auth .sign-in:hover svg,
+.auth .sign-up:hover svg {
+    animation: moveRight 0.6s ease-in-out alternate infinite;
+}
+
+.auth-left__switch-bettween-forms {
+    margin-top: 10px;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 13px;
+}
+
+.auth-left__switch-bettween-forms button {
+    color: var(--color);
+    cursor: pointer;
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(5px);
+    }
+
+    50% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(5px);
+    }
+}

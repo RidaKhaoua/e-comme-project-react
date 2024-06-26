@@ -1,0 +1,21 @@
+.shopPage__products {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 10px;
+}
+
+@media screen and (max-width:771px) {
+    .shopPage__products {
+        justify-items: center;
+    }
+}
+
+.shopPage__products .cardProduct__image {
+    background: white;
+}
+
+.shopPage__products img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}

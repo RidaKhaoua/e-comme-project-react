@@ -1,0 +1,80 @@
+.cardProduct {
+    background-color: #fff;
+    border-radius: var(--raduis-10);
+    width: 320px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.cardProduct.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.cardProduct__image {
+    background: linear-gradient(180deg, rgba(252, 203, 144, 0.44) 0%, rgba(255, 154, 158, 0.38) 100%);
+    display: flex;
+    min-height: 360px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 30px 0;
+}
+
+.cardProduct__image img {
+    transition: 0.4s ease-in-out;
+}
+
+.cardProduct__image img:hover {
+    transform: scale(1.1);
+}
+
+
+
+.cardProduct__shadow {
+    position: absolute;
+    top: 85%;
+    width: 120px;
+    height: 30px;
+    background-color: #0000000a;
+    border-radius: 50%;
+}
+
+.cardProduct__content {
+    padding: 18px;
+}
+
+.cardProduct__title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+}
+
+.cardProduct__priceBuy-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardProduct__price {
+    background-color: var(--bg-color);
+    padding: 8px 22px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.cardProduct__quality {
+    color: var(--bg-color);
+}
+
+.cardProduct__buy svg {
+    cursor: pointer;
+    color: var(--color);
+    font-weight: 600    ;
+}
+

@@ -1,0 +1,19 @@
+.logo {
+    position: relative;
+    font-size: 28px;
+    color: #FF5151;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 23%;
+    background-color: #000;
+    height: 100%;
+    border-radius: 8px;
+    padding: 5px;
+}

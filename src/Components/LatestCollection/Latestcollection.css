@@ -1,0 +1,16 @@
+.latest-collection {
+    padding: var(--padding);
+}
+
+.latest-collection__products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    justify-items: center;
+    gap: 18px;
+    margin: 18px 0;
+}
+
+.latest-collection__products .cardProduct__image {
+    background-color: #F0F0F0 !important;
+    background-image: none;
+}
