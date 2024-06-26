@@ -1,10 +1,10 @@
 
 import "./Profile.css"
-
+import userAvatr from "../../assets/Images/user-avatar.png"
 function Profile() {
   return (
     <div className='profile'>
-        <img src='/public/Images/user-avatar.png' />
+        <img src={userAvatr} />
     </div>
   )
 }

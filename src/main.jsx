@@ -20,7 +20,7 @@ import Root from "./routes/Root.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/e-comme-project-react/",
     element: <Root />,
     errorElement: <h1>404 Not found </h1>,
     children: [

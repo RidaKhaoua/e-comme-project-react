@@ -1,4 +1,4 @@
-import imageLogin from "/public/Images/Group 2014.png";
+import imageLogin from "../../assets/Images/Group 2014.png";
 import "./AuthPage.css";
 import { useState } from "react";
 import LoginForm from "../../Components/Auth/LoginForm";

@@ -20,7 +20,7 @@ function Navigation({ className }) {
     <div className={className}>
       <ul>
         <li>
-          <Link to="/" className="active">
+          <Link to="/e-comme-project-react" className="active">
             Home
           </Link>
         </li>

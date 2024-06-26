@@ -1,5 +1,6 @@
 import  { useState, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
+import HeroImage from "../../assets/Images/hero-image.png"
 import "./Hero.css"
 
 export default function Hero() {
@@ -36,7 +37,7 @@ export default function Hero() {
         </animated.div>
         <animated.div style={fadeFromRight}>
         <div className="hero__right">
-        <img src="/public/Images/hero-image.png" alt="" />
+        <img src={HeroImage} alt="" />
       </div>
         </animated.div>
     </div>

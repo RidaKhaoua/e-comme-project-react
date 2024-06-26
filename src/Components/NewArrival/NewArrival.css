@@ -56,16 +56,16 @@
 }
 
 .newArrival__left-top {
-    background-image: url("/Images/image-shop.jpeg");
+    background-image: url("../../assets/Images/image-shop.jpeg");
 }
 
 .newArrival__left-bottom {
-    background-image: url("/Images/image-shop-2.jpeg");
+    background-image: url("../../assets/Images/image-shop-2.jpeg");
 }
 
 .newArrival__right {
     min-height: 568px;
-    background-image: url("/Images/image-shop-4.jpeg");
+    background-image: url("../../assets/Images/image-shop-4.jpeg");
     background-size: cover;
     display: flex;
     justify-content: flex-end;

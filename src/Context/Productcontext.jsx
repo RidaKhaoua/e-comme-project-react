@@ -3,6 +3,17 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
 import ProductReducer from "../Reducer/ProductReducer";
 const ProductContext = createContext([]);
+import myImage from '../assets/Images/swet.png';
+import forkBlue from '../assets/Images/fork-blue.png'
+import appleWatch from '../assets/Images/apple-watch-series-2.png'
+import pngtreeHnad from '../assets/Images/—Pngtree—hand drawn vector minimalist cartoon.png'
+import summerNew from '../assets/Images/Summer-New-Men-Hawaiian-Short.png'
+import microphoneHead from '../assets/Images/microphone-headphones-lx50-gaming-headset-pc-game-gaming-computer.png'
+import appricot from '../assets/Images/apricot lady tot women s_4423236 1.png'
+import naikAir from '../assets/Images/nike-air-max-nike-tiempo-football-boot-nike-mercurial-vapor.png'
+import talonWomen from '../assets/Images/talon-women.png'
+
+
 import { v4 as uuidv4 } from "uuid";
 
 const initialState = {
@@ -12,7 +23,7 @@ const initialState = {
       title: "Nike Air Men’s Hoodie -  Imported Hoodie Red ",
       price: 150,
       quality: 5,
-      image: "/Images/swet.png",
+      image: myImage,
       category: "Clothes",
       isTopCollection: true,
       productYear: 2024,
@@ -22,7 +33,7 @@ const initialState = {
       title: "Armani Frok Ladies -  Imported Fork Blue",
       price: 250,
       quality: 5,
-      image: "/Images/fork-blue.png",
+      image: forkBlue,
       category: "Dresses",
       isTopCollection: true,
     },
@@ -31,7 +42,7 @@ const initialState = {
       title: "Apple Watch Series 6 - Sliver Band",
       price: 450,
       quality: 5,
-      image: "/Images/apple-watch-series-2.png",
+      image: appleWatch,
       category: "Accessories",
       isTopCollection: true,
       productYear: 2024,
@@ -41,7 +52,7 @@ const initialState = {
       title: "Pngtree—hand drawn vector minimalist",
       price: 150,
       quality: 5,
-      image: "/Images/—Pngtree—hand drawn vector minimalist cartoon.png",
+      image: pngtreeHnad,
       category: "Clothes",
       productYear: 2024,
       isTopCollection: false,
@@ -51,7 +62,7 @@ const initialState = {
       title: "Summer-New-Men-Hawaiian-Short",
       price: 150,
       quality: 5,
-      image: "/Images/Summer-New-Men-Hawaiian-Short.png",
+      image: summerNew,
       category: "Clothes",
       productYear: 2024,
       isTopCollection: false,
@@ -62,7 +73,7 @@ const initialState = {
       price: 150,
       quality: 5,
       image:
-        "/Images/microphone-headphones-lx50-gaming-headset-pc-game-gaming-computer.png",
+        microphoneHead,
       category: "Clothes",
       productYear: 2024,
       isTopCollection: false,
@@ -72,7 +83,7 @@ const initialState = {
       title: "apricot lady tot women s_4423236",
       price: 150,
       quality: 5,
-      image: "/Images/apricot lady tot women s_4423236 1.png",
+      image: appricot,
       category: "Clothes",
       productYear: 2024,
       isTopCollection: false,
@@ -83,7 +94,7 @@ const initialState = {
       price: 150,
       quality: 5,
       image:
-        "/Images/nike-air-max-nike-tiempo-football-boot-nike-mercurial-vapor.png",
+       naikAir,
       category: "Clothes",
       productYear: 2024,
       isTopCollection: false,
@@ -93,7 +104,7 @@ const initialState = {
       title: "talon-women",
       price: 150,
       quality: 5,
-      image: "/Images/talon-women.png",
+      image: talonWomen,
       category: "Clothes",
       productYear: 2024,
       isTopCollection: false,
@@ -104,7 +115,7 @@ const initialState = {
       title: "Apple Watch Series 6 - Sliver Band",
       price: 450,
       quality: 5,
-      image: "/Images/apple-watch-series-2.png",
+      image: appleWatch,
       category: "Accessories",
       isTopCollection: true,
       productYear: 2024,

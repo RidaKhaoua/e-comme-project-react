@@ -1,8 +1,8 @@
 import "./LatestNews.css";
 import TitleSection from "../TitleSection/TitleSection";
-import imageShop3 from "/public/Images/image-shop-3.jpeg";
-import imageShop4 from "/public/Images/image-shop-4.jpeg";
-import imageShop5 from "/public/Images/image-shop-5.jpeg";
+import imageShop3 from "../../assets/Images/image-shop-3.jpeg";
+import imageShop4 from "../../assets/Images/image-shop-4.jpeg";
+import imageShop5 from "../../assets/Images/image-shop-5.jpeg";
 import Card from "../Card/Card";
 function LatestNews() {
   return (
