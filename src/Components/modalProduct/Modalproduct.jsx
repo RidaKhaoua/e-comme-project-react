@@ -25,14 +25,12 @@ function Modalproduct({ product, isLoading, error }) {
          isLoading ? <IsLoading/> : (
           <div className="modal-product__container">
           <div className="modal-product__close">
-            <Link to="/shopPage">
-              <button
+          <button
                 onClick={() => {
                   closeModalProduct();
                 }}>
                 <CancelOutlinedIcon />
               </button>
-            </Link>
           </div>
           <div className="modal-product__image">
             <img src={product.image} alt="image" />
