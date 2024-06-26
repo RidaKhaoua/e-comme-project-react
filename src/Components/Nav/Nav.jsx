@@ -37,11 +37,11 @@ function Navigation({ className }) {
       <div className="header__icons">
         <SearchOutlinedIcon className="header__icon" />
           {user.isAuth ? (
-            <Link to="/profile">
+            <Link to="profile">
               <Profile />
             </Link>
           ) : (
-            <Link to="/login">
+            <Link to="login">
               <Person2OutlinedIcon className="header__icon" />
             </Link>
           )}
