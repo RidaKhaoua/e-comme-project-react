@@ -67,7 +67,7 @@ function RegisterForm({ componentName }) {
 
         <button className="sign-up" onClick={() => {
           register(email, password, userName)
-          navigate("/")
+          navigate("/e-comme-project-react")
         }}>
           Sing up <EastOutlinedIcon />
         </button>

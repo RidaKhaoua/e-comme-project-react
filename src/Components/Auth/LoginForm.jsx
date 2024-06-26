@@ -35,7 +35,7 @@ function LoginForm({ componentName }) {
     e.preventDefault();
     if (user.password === password && user.email === email  ) {
       login()
-      navigate("/");
+      navigate("/e-comme-project-react");
     } else {
       alert("password  or email is incorrect");
     }
