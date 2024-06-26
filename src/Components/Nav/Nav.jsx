@@ -25,13 +25,13 @@ function Navigation({ className }) {
           </Link>
         </li>
         <li>
-          <Link to="/shopPage">Shop</Link>
+          <Link to="shopPage">Shop</Link>
         </li>
         <li>
-          <Link to="/aboutUs">About us</Link>
+          <Link to="aboutUs">About us</Link>
         </li>
         <li>
-          <Link to="/contactUs">Contanct us</Link>
+          <Link to="contactUs">Contanct us</Link>
         </li>
       </ul>
       <div className="header__icons">
