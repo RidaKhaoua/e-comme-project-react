@@ -7,9 +7,8 @@ import { Link } from "react-router-dom";
 import { useProducts } from "../../Context/Productcontext";
 import { useShopList } from "../../Context/ShopListcontext";
 import {useAuth} from "../../Context/AuthContext";
-
-import Profile from "../Profile/Profile";
-
+import userAvatar from "../../assets/Images/user-avatar.png"
+import "./Nav.css"
 function Navigation({ className }) {
   const { shopingList } = useProducts();
   const { showShoplist } = useShopList();
@@ -38,7 +37,7 @@ function Navigation({ className }) {
         <SearchOutlinedIcon className="header__icon" />
           {user.isAuth ? (
             <Link to="profile">
-              <Profile />
+              <img className="avatar" src={userAvatar}/>
             </Link>
           ) : (
             <Link to="login">

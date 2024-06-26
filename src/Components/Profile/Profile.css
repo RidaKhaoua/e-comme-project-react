@@ -1,5 +1,26 @@
-.profile img {
-    height: 30px;
-    width: 30px;
+.profile {
+    padding: 50px 0;
+}
+
+.profile .user img {
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
+}
+
+.profile .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile .user p {
+    margin-bottom: 10px;
+}
+
+.profile .logout {
+    background-color: orange;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
 }

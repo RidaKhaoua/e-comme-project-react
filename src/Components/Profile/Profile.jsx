@@ -1,10 +1,20 @@
 
 import "./Profile.css"
-import userAvatr from "../../assets/Images/user-avatar.png"
-function Profile() {
+import userAvatar from "../../assets/Images/user-avatar.png"
+import { useAuth } from "../../Context/AuthContext"
+
+function Profile({handelLogout}) {
+  const {user} = useAuth();
   return (
     <div className='profile'>
-        <img src={userAvatr} />
+        {user.isAuth && <div className="user"> 
+            <img src={userAvatar} />
+            <div className="info">
+              <p>UserName: {user.userName}</p>
+              <p>Password: {user.email}</p>
+              <button className="logout" onClick={handelLogout}>Logout</button>  
+            </div>
+          </div>}
     </div>
   )
 }
