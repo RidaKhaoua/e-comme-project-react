@@ -52,7 +52,7 @@ function CardProduct({ id, img, title, price, disabled }) {
                 addProductToShopList(id, img, price, title);
                 updateId(id);
               } else {
-                  navigate("/login")
+                  navigate("/e-comme-project-react/login")
               }
 
               }}>
